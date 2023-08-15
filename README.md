@@ -1,3 +1,15 @@
+# Important ITSS-PSI Imperial 
+Please make sure you download & extract the dataset into the root directory of this project, in a folder named dataset. Being consistent will save us having to change the configs every time.
+
+## Setup 
+After cloning the repository: 
+```bash 
+python3 -m venv .psi (or whatever)
+pip install -r requirements.txt
+```
+
+
+
 # Pedestrian Situated Intent (PSI) Bencharmark
 
 This Repository contains the scripts and instructions about preparing the **Pedestrian Situated Intent (PSI) 1.0 & 2.0** dataset. 
