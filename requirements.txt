@@ -1,3 +1,8 @@
 opencv-python 
 tqdm 
 torch 
+torchvision
+tensorboard 
+numpy==1.23.1 #>1.23.1 will cause an error when loading nlp dataset 
+scikit-learn
+scipy 
