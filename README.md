@@ -2,13 +2,29 @@
 Please make sure you download & extract the dataset into the root directory of this project, in a folder named dataset. Being consistent will save us having to change the configs every time.
 
 ## Setup 
-After cloning the repository: 
-```bash 
+Remember, the baselines are included as git submodule; weird stuff can happen when working with submodules so make sure to pull/push changes to and from thhe correct repo. 
+
+```
+git clone --recursive git@github.com:fahmyadan/ITSS-PSI.git 
 python3 -m venv .psi (or whatever)
 pip install -r requirements.txt
+
 ```
 
+Then follow the instructions below and on the baselines repo [here](https://github.com/fahmyadan/PSI-Intent-Prediction-baseline/tree/main)
 
+At present the  baseline results are:
+
+```bash
+Evaluating Intent ...
+Acc:  0.4382120359201179
+F1:  0.43801838142709026
+mAcc:  0.5767779579796684
+ConfusionMatrix:  [[3131  551]
+ [7832 3408]]
+```
+
+Note; the model here is very basic
 
 # Pedestrian Situated Intent (PSI) Bencharmark
 
