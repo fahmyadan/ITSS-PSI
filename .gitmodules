@@ -1,0 +1,3 @@
+[submodule "PSI-Intent-Prediction-baseline"]
+	path = PSI-Intent-Prediction-baseline
+	url = git@github.com:fahmyadan/PSI-Intent-Prediction-baseline.git
