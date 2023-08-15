@@ -2,7 +2,7 @@ import os
 import json
 import sys
 import copy
-
+from pathlib import Path
 def most_frequent(List):
     # return the most frequent intent estimation made by all annotators
     counter = 0
@@ -20,7 +20,9 @@ def most_frequent(List):
 if __name__ == '__main__':
     print("Extend Intent Annotations of PSI 2.0 Dataset.")
 
-    root_path = sys.argv[1]
+    
+    # root_path = sys.argv[1]
+    root_path = str(Path(__file__).parents[0]) + '/dataset/'
 
     key_frame_anotation_path = os.path.join(root_path, 'PSI2.0_TrainVal/annotations/cognitive_annotation_key_frame')
     extended_annotation_path = os.path.join(root_path, 'PSI2.0_TrainVal/annotations/cognitive_annotation_extended')
