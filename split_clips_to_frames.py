@@ -8,8 +8,9 @@ from tqdm import tqdm
 import sys
 
 if __name__ == '__main__':
-    root_path = sys.argv[1]
-    video_path = os.path.join(root_path, 'PSI_Videos/videos')
+    # root_path = sys.argv[1]
+    root_path = str(Path(__file__).parents[0]) + '/dataset/'
+    video_path = os.path.join(root_path, 'videos')
     frames_path = os.path.join(root_path, 'frames')
 
     #create 'data/frames' folder
